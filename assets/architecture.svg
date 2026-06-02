@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1568" height="452" viewBox="0 0 1568 452" role="img" aria-labelledby="title desc">
+  <title id="title">득템시루 시스템 아키텍처</title>
+  <desc id="desc">마감 임박 식품을 주문하고 매장에서 픽업하는 서비스. 사용자 화면에서 핵심 처리, 데이터와 외부 연동으로 이어지는 주요 실행 흐름이다. 화살표는 소스 의존성이 아니다. Android는 저장소 계약으로, 서버는 출력 포트로 외부 구현을 분리합니다.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; fill: #1D1D1F; }
+    .heading { font-size: 27px; font-weight: 700; }
+    .subtitle { font-size: 19px; fill: #6B6B6B; }
+    .body { font-size: 19px; }
+    .label { font-size: 18px; font-weight: 700; fill: #C94B28; }
+    .role { font-size: 17px; font-weight: 700; fill: #C94B28; }
+    .connector { fill: #8A2F19; }
+    .icon { fill: none; stroke: #C94B28; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <rect width="1568" height="452" rx="16" fill="#F5F5F7"/>
+  <g transform="translate(24 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#FFE7DE"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="11" y="3" width="26" height="42" rx="5"/><path d="M20 9h8M21 39h6"/></g>
+    <text x="104" y="63" class="label">01 | 사용자 화면</text>
+    <text x="24" y="126" class="heading">Android 앱</text>
+    <text x="24" y="154" class="subtitle">구매자 · 판매자</text>
+    <text x="24" y="181" class="subtitle">MVVM · Clean Architecture</text>
+    <path d="M24 200H376" stroke="#F0F0F0"/>
+    <text x="24" y="233" class="role">View · ViewModel</text>
+    <text x="24" y="264" class="body">화면 표시와 상태 관리</text>
+    <text x="24" y="315" class="role">Domain · Data</text>
+    <text x="24" y="346" class="body">모델·저장소 계약과 API 연동</text>
+  </g>
+  <g transform="translate(584 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#FFE7DE"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="4" y="5" width="40" height="16" rx="4"/><rect x="4" y="27" width="40" height="16" rx="4"/><path d="M12 13h1M12 35h1M23 13h13M23 35h13"/></g>
+    <text x="104" y="63" class="label">02 | 핵심 처리</text>
+    <text x="24" y="126" class="heading">Spring Boot</text>
+    <text x="24" y="154" class="subtitle">Kotlin · 단일 백엔드</text>
+    <text x="24" y="181" class="subtitle">헥사고날 · 클린 아키텍처</text>
+    <path d="M24 200H376" stroke="#F0F0F0"/>
+    <text x="24" y="233" class="role">HTTP 입력 어댑터</text>
+    <text x="24" y="264" class="body">요청 검증 · 인증</text>
+    <text x="24" y="315" class="role">Application · Domain</text>
+    <text x="24" y="346" class="body">주문 · 재고 · 결제 · 픽업 · 정산</text>
+  </g>
+  <g transform="translate(1144 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#FFE7DE"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><ellipse cx="24" cy="9" rx="18" ry="6"/><path d="M6 9v30c0 8 36 8 36 0V9M6 24c0 8 36 8 36 0"/></g>
+    <text x="104" y="63" class="label">03 | 데이터·외부 연동</text>
+    <text x="24" y="126" class="heading">PostgreSQL</text>
+    <text x="24" y="154" class="subtitle">주문 · 상품 · 결제 데이터</text>
+    <path d="M24 200H376" stroke="#F0F0F0"/>
+    <text x="24" y="233" class="role">Kakao · FCM</text>
+    <text x="24" y="264" class="body">로그인 · 푸시 (FCM 선택 활성화)</text>
+    <text x="24" y="315" class="role">로컬 파일</text>
+    <text x="24" y="346" class="body">상품 이미지 저장</text>
+  </g>
+  <g>
+    <text x="504" y="207" class="role connector" text-anchor="middle">HTTP / JSON</text>
+    <text x="1064" y="207" class="role connector" text-anchor="middle">출력 포트·어댑터</text>
+    <path d="M440 226H568m-8-6 8 6-8 6M1000 226H1128m-8-6 8 6-8 6" fill="none" stroke="#C94B28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"/>
+  </g>
+</svg>

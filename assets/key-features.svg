@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="452" viewBox="0 0 1280 452" role="img" aria-labelledby="title desc">
+  <title id="title">득템시루 핵심 기능</title>
+  <desc id="desc">가까운 마감 상품 찾기: 지도 탐색 · 상품 확인 · 찜, 상품 등록 · 가격·재고 관리. 주문하고 시루로 결제: 장바구니 · 시루 결제 시뮬레이션, 주문 접수 · 주문 상태 관리. 매장에서 상품 받기: 픽업 코드·QR 제시 · 리뷰 작성, 픽업 검증 · 매출 확인 · 정산 신청.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; fill: #1D1D1F; }
+    .heading { font-size: 27px; font-weight: 700; }
+    .subtitle { font-size: 19px; fill: #6B6B6B; }
+    .body { font-size: 19px; }
+    .label { font-size: 18px; font-weight: 700; fill: #C94B28; }
+    .role { font-size: 17px; font-weight: 700; fill: #C94B28; }
+    .icon { fill: none; stroke: #C94B28; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <rect width="1280" height="452" rx="16" fill="#F5F5F7"/>
+  <g transform="translate(24 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#FFE7DE"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><path d="M24 43s15-14 15-25a15 15 0 0 0-30 0c0 11 15 25 15 25Z"/><circle cx="24" cy="18" r="5"/></g>
+    <text x="104" y="63" class="label">01 | 상품 탐색</text>
+    <text x="24" y="132" class="heading">가까운 마감 상품 찾기</text>
+    <text x="24" y="164" class="subtitle">주변 매장의 할인 상품을 한눈에</text>
+    <path d="M24 190H376" stroke="#F0F0F0"/>
+    <text x="24" y="226" class="role">구매자</text>
+    <text x="24" y="257" class="body">지도 탐색 · 상품 확인 · 찜</text>
+    <text x="24" y="315" class="role">판매자</text>
+    <text x="24" y="346" class="body">상품 등록 · 가격·재고 관리</text>
+  </g>
+  <g transform="translate(440 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#FFE7DE"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="5" y="10" width="38" height="29" rx="5"/><path d="M5 19h38M12 30h9"/></g>
+    <text x="104" y="63" class="label">02 | 주문·결제</text>
+    <text x="24" y="132" class="heading">주문하고 시루로 결제</text>
+    <text x="24" y="164" class="subtitle">장바구니에서 주문까지 간편하게</text>
+    <path d="M24 190H376" stroke="#F0F0F0"/>
+    <text x="24" y="226" class="role">구매자</text>
+    <text x="24" y="257" class="body">장바구니 · 시루 결제 시뮬레이션</text>
+    <text x="24" y="315" class="role">판매자</text>
+    <text x="24" y="346" class="body">주문 접수 · 주문 상태 관리</text>
+  </g>
+  <g transform="translate(856 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#FFE7DE"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><path d="M6 19h36v24H6ZM4 19 9 5h30l5 14M17 43V29h14v14M4 19c0 7 10 7 10 0 0 7 10 7 10 0 0 7 10 7 10 0 0 7 10 7 10 0"/></g>
+    <text x="104" y="63" class="label">03 | 픽업·매출</text>
+    <text x="24" y="132" class="heading">매장에서 상품 받기</text>
+    <text x="24" y="164" class="subtitle">코드·QR로 확인하고 픽업 완료</text>
+    <path d="M24 190H376" stroke="#F0F0F0"/>
+    <text x="24" y="226" class="role">구매자</text>
+    <text x="24" y="257" class="body">픽업 코드·QR 제시 · 리뷰 작성</text>
+    <text x="24" y="315" class="role">판매자</text>
+    <text x="24" y="346" class="body">픽업 검증 · 매출 확인 · 정산 신청</text>
+  </g>
+</svg>
